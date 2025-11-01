@@ -186,10 +186,10 @@ BSD-3-Clause License
 If you use annotAIte in your research, please cite:
 
 ```bibtex
-@software{annotAIte2024,
+@software{annotAIte2025,
   title = {annotAIte: Self-supervised false-color mapping and harmonized clustering},
   author = {Petrus Zwart & Aritro Dasgupta},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/phzwart/annotAIte}
 }
 ```
