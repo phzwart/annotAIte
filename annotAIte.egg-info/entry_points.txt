@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-annotAIte = napari_annotAIte._hooks:napari_experimental_provide_dock_widget

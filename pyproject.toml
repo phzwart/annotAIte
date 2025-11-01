@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "annotAIte"
+version = "0.1.0"
+description = "Self-supervised false-color mapping and harmonized clustering for annotation assistance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "BSD-3-Clause"}
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+keywords = ["image-processing", "clustering", "false-color", "annotation", "microscopy", "remote-sensing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "scikit-learn>=1.0.0",
+    "umap-learn>=0.5.3",
+    "torch>=1.11.0",
+    "qlty>=0.1.0",
+]
+
+[project.optional-dependencies]
+napari = [
+    "napari>=0.4.0",
+    "magicgui>=0.5.0",
+    "qtpy>=2.0.0",
+    "PyQt5>=5.12.0; platform_system != 'Linux'",
+    "PyQt6>=6.2.0; platform_system == 'Linux'",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/annotAIte"
+Documentation = "https://github.com/yourusername/annotAIte#readme"
+Repository = "https://github.com/yourusername/annotAIte.git"
+Issues = "https://github.com/yourusername/annotAIte/issues"
+
+[tool.setuptools]
+packages = ["annotAIte", "napari_annotAIte"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md", "*.json", "icons/*"]
+
+[project.entry-points."napari.manifest"]
+"napari-annotAIte" = "napari_annotAIte._hooks:napari_experimental_provide_dock_widget"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
