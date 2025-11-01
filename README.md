@@ -188,9 +188,9 @@ If you use annotAIte in your research, please cite:
 ```bibtex
 @software{annotAIte2024,
   title = {annotAIte: Self-supervised false-color mapping and harmonized clustering},
-  author = {Your Name},
+  author = {Petrus Zwart & Aritro Dasgupta},
   year = {2024},
-  url = {https://github.com/yourusername/annotAIte}
+  url = {https://github.com/phzwart/annotAIte}
 }
 ```
 

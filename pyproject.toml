@@ -10,7 +10,8 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "BSD-3-Clause"}
 authors = [
-    { name = "Your Name", email = "your.email@example.com" }
+    { name = "Petrus Zwart", email = "PHZwart@lbl.gov" },
+    { name = "Aritro Dasgupta", email = "AritroDasgupta@lbl.gov" }
 ]
 keywords = ["image-processing", "clustering", "false-color", "annotation", "microscopy", "remote-sensing"]
 classifiers = [
